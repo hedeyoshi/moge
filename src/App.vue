@@ -9,6 +9,8 @@
       <router-link to="/moge">Moge</router-link>
     </div>
  -->
+<!-- ヘッダをAppにもってきて楽しようとしたあたりで集中力が切れました。
+来週のおれがんばってね。 -->
 
     <!-- ↓ここにrouter.jsで指定したページが描画される -->
     <router-view/>
