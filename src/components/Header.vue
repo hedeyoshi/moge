@@ -3,8 +3,9 @@
     <h1>{{ logo }}</h1>
     <nav>
       <ul>
-        <li><a href="">nav 1</a></li>
-        <li><a href="">nav 2</a></li>
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/about">About</router-link></li>
+        <li><router-link to="/moge">Moge</router-link></li>
       </ul>
     </nav>
   </header>
@@ -21,4 +22,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.Header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  background-color: #33ff00;
+}
 </style>
