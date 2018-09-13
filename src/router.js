@@ -21,9 +21,9 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     },
     {
-      path: '/moge',
-      name: 'moge',
-      component: () => import("./views/Moge.vue")
+      path: '/status',
+      name: 'status',
+      component: () => import("./views/Status.vue")
     }
   ]
 })
