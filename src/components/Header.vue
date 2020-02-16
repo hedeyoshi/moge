@@ -3,9 +3,10 @@
     <!-- <h1>{{ logo }}</h1> -->
     <nav>
       <ul>
-        <li><router-link to="/" exact>かせぐ</router-link></li>
-        <li><router-link to="/about" exact>かう</router-link></li>
-        <li><router-link to="/status" exact>ステータス</router-link></li>
+        <li><router-link to="/" exact>Home</router-link></li>
+        <li><router-link to="/about" exact>About</router-link></li>
+        <li><router-link to="/Works" exact>Works</router-link></li>
+        <li><router-link to="/Contact" exact>Contact</router-link></li>
       </ul>
     </nav>
   </header>
@@ -23,19 +24,13 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .Header {
-  /* position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
-  width: 100vw; */
-  background-color: #33ff00;
-  height: 48px;
 }
 nav {
   height: 48px;
 }
 ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   height: 100%;
 }
