@@ -1,19 +1,31 @@
 <template>
-  <header class="Navigation">
-    <nav>
-      <ul>
-        <li><router-link to="/" exact>Home</router-link></li>
-        <li><router-link to="/About" exact>About</router-link></li>
-        <li><router-link to="/Works" exact>Works</router-link></li>
-        <li><router-link to="/Contact" exact>Contact</router-link></li>
-      </ul>
-    </nav>
-  </header>
+  <ul>
+    <li class="work">
+      <img src="//placehold.jp/150x150.png" alt="" class="work-thumbnail" />
+      <h2 class="work-title">案件名</h2>
+      <div class="work-data">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          consequuntur animi dolore ipsum pariatur asperiores sit suscipit
+          temporibus iusto quaerat numquam, enim voluptas. Magnam omnis, nam
+          sunt maiores quae eaque.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta,
+          eveniet!
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta,
+          eveniet!
+        </p>
+      </div>
+    </li>
+  </ul>
 </template>
 
 <script>
 export default {
-  name: 'Navigation',
+  name: 'Work',
   props: {
     logo: String,
   },

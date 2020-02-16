@@ -1,7 +1,13 @@
 <template>
   <div class="home">
-    <h1>Home</h1>
-    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
+    <h1 class="title">
+      Hideyoshi <br />
+      Koeda
+    </h1>
+    <img src="../assets/icon.png" alt="icon" class="icon" />
+    <div>
+      Front end engineer
+    </div>
   </div>
 </template>
 
@@ -10,3 +16,8 @@ export default {
   name: 'home',
 };
 </script>
+
+<style lang="scss" scoped>
+.home {
+}
+</style>
