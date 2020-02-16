@@ -3,15 +3,13 @@
     <h1 class="title">Works</h1>
     <div>
       <ul class="works_list">
-        <li v-for="work in works" class="work">
+        <li v-for="work in works" v-bind:key="work" class="work">
           <div class="work-thumbnail">
-            <img v-bind:src="work.thumbnail" alt="" />
+            <img v-bind:src="work.thumbnail" alt />
           </div>
           <div class="work-data">
             <h2 class="work-title">{{ work.title }}</h2>
-            <div class="work-body">
-              {{ work.body }}
-            </div>
+            <div class="work-body">{{ work.body }}</div>
           </div>
         </li>
       </ul>
@@ -21,54 +19,54 @@
 
 <script>
 export default {
-  name: 'works',
+  name: "works",
   data() {
     return {
       works: [
         {
-          thumbnail: '//placehold.jp/128x128.png',
-          title: 'ここに案件名Aがはいります',
+          thumbnail: "//placehold.jp/128x128.png",
+          title: "ここに案件名Aがはいります",
           body:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequuntur animi dolore ipsum pariatur asperiores sit suscipit temporibus iusto quaerat numquam, enim voluptas. Magnam omnis, nam sunt maiores quae eaque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, eveniet! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, eveniet!',
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequuntur animi dolore ipsum pariatur asperiores sit suscipit temporibus iusto quaerat numquam, enim voluptas. Magnam omnis, nam sunt maiores quae eaque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, eveniet! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, eveniet!"
         },
         {
-          thumbnail: '//placehold.jp/128x128.png',
-          title: 'ここに案件名Bがはいります',
+          thumbnail: "//placehold.jp/128x128.png",
+          title: "ここに案件名Bがはいります",
           body:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo blanditiis illum saepe aliquid.',
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo blanditiis illum saepe aliquid."
         },
         {
-          thumbnail: '//placehold.jp/128x128.png',
-          title: 'ここに案件名Cがはいります',
+          thumbnail: "//placehold.jp/128x128.png",
+          title: "ここに案件名Cがはいります",
           body:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laborum tenetur maiores voluptatibus alias optio, sunt distinctio harum ipsa quibusdam dolores consequuntur ipsum reiciendis dolor nisi ullam iusto!',
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laborum tenetur maiores voluptatibus alias optio, sunt distinctio harum ipsa quibusdam dolores consequuntur ipsum reiciendis dolor nisi ullam iusto!"
         },
         {
-          thumbnail: '//placehold.jp/128x128.png',
-          title: 'ここに案件名Dがはいります',
+          thumbnail: "//placehold.jp/128x128.png",
+          title: "ここに案件名Dがはいります",
           body:
-            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, explicabo!',
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, explicabo!"
         },
         {
-          thumbnail: '//placehold.jp/128x128.png',
-          title: 'ここに案件名Eがはいります',
-          body: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+          thumbnail: "//placehold.jp/128x128.png",
+          title: "ここに案件名Eがはいります",
+          body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit."
         },
         {
-          thumbnail: '//placehold.jp/128x128.png',
-          title: 'ここに案件名Fがはいります',
+          thumbnail: "//placehold.jp/128x128.png",
+          title: "ここに案件名Fがはいります",
           body:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequuntur animi dolore ipsum pariatur asperiores sit suscipit temporibus iusto quaerat numquam, enim voluptas. Magnam omnis, nam sunt maiores quae eaque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, eveniet! Lorem ipsum dolor sit.',
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium consequuntur animi dolore ipsum pariatur asperiores sit suscipit temporibus iusto quaerat numquam, enim voluptas. Magnam omnis, nam sunt maiores quae eaque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta, eveniet! Lorem ipsum dolor sit."
         },
         {
-          thumbnail: '//placehold.jp/128x128.png',
-          title: 'ここに案件名Gがはいります',
+          thumbnail: "//placehold.jp/128x128.png",
+          title: "ここに案件名Gがはいります",
           body:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, reiciendis. Totam ipsam tempora, sit dolorum aut natus pariatur.',
-        },
-      ],
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, reiciendis. Totam ipsam tempora, sit dolorum aut natus pariatur."
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 
